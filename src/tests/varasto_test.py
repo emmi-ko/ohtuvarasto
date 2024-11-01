@@ -57,7 +57,7 @@ class TestVarasto(unittest.TestCase):
         self.assertEqual(saatu_maara, 0)
 
     def test_varasto_lisays_virhe(self):
-        self.assertEqual(self.testivarasto.lisaa_varastoon(-1), -1)
+        self.assertEqual(self.testivarasto.lisaa_varastoon(-1), None)
 
     def test_varastosta_otto_virhe(self):
         self.assertEqual(self.testivarasto.ota_varastosta(-1), 0.0)
